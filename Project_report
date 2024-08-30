@@ -1,0 +1,25 @@
+Data Preprocessing
+Target Variable:
+The target variable for the model is the 'IS_SUCCESSFUL' column, which indicates whether the charity was successful.
+Feature Variables:
+The feature variables are all other columns in the dataset after dropping the 'IS_SUCCESSFUL' column.
+Removed Variables:
+The 'EIN' and 'NAME' columns were removed as they do not contribute to the predictive model and are neither target nor feature variables.
+Compiling, Training, and Evaluating the Model
+Model Architecture:
+The initial model architecture included two hidden layers:
+First Hidden Layer: 8 neurons with ReLU activation.
+Second Hidden Layer: 5 neurons with ReLU activation.
+These configurations were chosen as starting points and were adjusted in subsequent attempts to improve performance.
+Model Performance:
+The initial model did not achieve the target accuracy of 75%, instead reaching approximately 73%.
+Optimization Attempts:
+To improve accuracy, the following steps were taken:
+Added more hidden layers to increase model complexity.
+Adjusted the number of neurons in each layer.
+Removed additional columns that might introduce noise.
+Experimented with different activation functions.
+Increased and decreased the number of layers to find the optimal balance.
+Summary
+Overall Results:
+The final deep learning model achieved an accuracy of around 73%, which is close to but below the target of 75%.
